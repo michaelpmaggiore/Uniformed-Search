@@ -1,0 +1,12 @@
+Mercury Sun 3
+Venus Mercury 7
+Venus Sun 6
+Earth Venus 5
+Moon Earth 9
+Sun Earth 3
+Sun Neptune 1
+Neptune Uranus 4
+Uranus Saturn 2
+Saturn Neptune 5
+Mars Pluto 4
+END OF INPUT

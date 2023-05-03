@@ -1,0 +1,110 @@
+# Programming_assignment1_input2.txt test cases
+
+# tests between Bremen and Frankfurt
+Command: 
+python find_route.py programming_assignment1_input1.txt Bremen Frankfurt
+
+Expected output:
+distance: 455 km
+route:
+Bremen to Dortmund, 234 km
+Dortmund to Frankfurt, 221 km
+
+
+# tests cities that are unreacheable
+Command: 
+python find_route.py programming_assignment1_input1.txt London Frankfurt
+
+Expected output:
+distance: infinity
+route:
+none
+
+
+# tests two cities that are the same
+Command: 
+python find_route.py programming_assignment1_input1.txt Berlin Berlin
+
+Expected output:
+distance: 0 km
+route:
+Berlin to Berlin, 0 km
+
+
+# tests two cities that are right next to eachother
+Command: 
+python find_route.py programming_assignment1_input1.txt Munich Nuremberg
+
+Expected output:
+distance: 171 km
+route:
+Munich to Nuremberg, 171 km
+
+
+# tests two cities that are farthest from each other
+Command: 
+python find_route.py programming_assignment1_input1.txt Saarbruecken Berlin
+
+Expected output:
+distance: 841 km
+route:
+Saarbruecken to Frankfurt, 177 km
+Frankfurt to Kassel, 185 km
+Kassel to Hannover, 165 km
+Hannover to Magdeburg, 148 km
+Magdeburg to Berlin, 166 km
+
+# Programming_assignment1_input2.txt test cases (custom planetary map)!
+
+# tests between Sun and Saturn
+Command: 
+python find_route.py programming_assignment1_input2.txt Sun Saturn
+
+Expected output:
+distance: 6 km
+route:
+Sun to Neptune, 1 km
+Neptune to Saturn, 5 km
+
+
+# tests cities that are unreacheable
+Command: 
+python find_route.py programming_assignment1_input2.txt Pluto Moon
+
+Expected output:
+distance: infinity
+route:
+none
+
+
+# tests two cities that are the same
+Command: 
+python find_route.py programming_assignment1_input2.txt Mercury Mercury
+
+Expected output:
+distance: 0 km
+route:
+Mercury to Mercury, 0 km
+
+
+# tests two cities that are right next to eachother
+Command: 
+python find_route.py programming_assignment1_input2.txt Uranus Neptune
+
+Expected output:
+distance: 4 km
+route:
+Uranus to Neptune, 4 km
+
+
+# tests two cities that are farthest from each other
+Command: 
+python find_route.py programming_assignment1_input2.txt Saturn Moon
+
+Expected output:
+distance: 18 km
+route:
+Saturn to Neptune, 5 km
+Neptune to Sun, 1 km
+Sun to Earth, 3 km
+Earth to Moon, 9 km
